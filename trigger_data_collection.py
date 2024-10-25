@@ -25,10 +25,10 @@ def trigger_data_collection_api(dataset_id, data, api_key):
 def main():
     load_dotenv()
     api_key = os.getenv("BRIGHT_DATA_API_KEY")
-    dataset_id = os.getenv("BRIGHT_DATA_DATASET_ID")
+    dataset_id = os.getenv("BRIGHT_DATA_DATASET_ID") # Change this to correct env variable later
 
     input_data = [
-        {"url": "https://www.linkedin.com/in/ryanroslansky/"},
+        {"url": "https://www.linkedin.com/in/ryanroslansky/"}, # need examples for all datasets perhaps
     ]
 
     response = trigger_data_collection_api(dataset_id, input_data, api_key)
